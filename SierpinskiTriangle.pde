@@ -12,8 +12,8 @@ public void mouseDragged()//optional
 }
 public void sierpinski(int x, int y, int len) 
 {
-	if(len <= 20)
-		triangle(x, y, x + len/2, y, x + len/2, y + len);
+	if(len <= 400)
+		triangle(x, y, x + len/2, y-sin(PI/3) * len, x + len/2, y);
 	else
 	{
 		sierpinski(x, y, len/2);
